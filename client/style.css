@@ -52,7 +52,8 @@ form.chat {
 
 .chat input {
   border: none;
-  height: 25px;
+  height: 40px;
+  padding: 10px;
 }
 
 .chat button {
