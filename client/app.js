@@ -3,9 +3,10 @@ var socket = io();
 /* Emit textual message to the server and clear the input so
  * another message can be typed by the same user.
  */
-$("form").on("submit", function() {
+$("form").submit(function() {
   var text = $("#message").val();
-  socket.emit("message", text);
+  var user = $("#initials").val();
+  socket.emit("message", `${user} says: ${text}`);
   $("#message").val("");
   return false;
 });
