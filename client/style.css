@@ -34,9 +34,11 @@ main {
 
 .history li {
   padding: 10px;
-  /* border-radius: 10px; */
+  border-radius: 3px;
 }
 
+/* This will need to change. The bg color should only be applied
+to received messages, which may not always be odd or even. */
 .history li:nth-child(odd) {
   background-color: #dbdbdb;
 }
